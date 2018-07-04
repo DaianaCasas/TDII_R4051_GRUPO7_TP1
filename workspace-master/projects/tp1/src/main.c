@@ -1,53 +1,21 @@
-/* Copyright 2016, Pablo Ridolfi
- * All rights reserved.
- *
- * This file is part of Workspace.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice,
- *    this list of conditions and the following disclaimer.
- *
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- *    this list of conditions and the following disclaimer in the documentation
- *    and/or other materials provided with the distribution.
- *
- * 3. Neither the name of the copyright holder nor the names of its
- *    contributors may be used to endorse or promote products derived from this
- *    software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
- *
- */
- 
-/** @brief This is a simple blink example.
+
+/** @brief Este es el desarrollo del Trabajo Práctico 1.
  */
 
-/** \addtogroup blink Bare-metal blink example
+/** \addtogroup Cambio de frecuencia del blinky.
  ** @{ */
 
 /*==================[inclusions]=============================================*/
 
 #include "../../tp1/inc/main.h"
-
 #include "board.h"
-
+/** @brief macros and definitions
+ *
+ */
 /*==================[macros and definitions]=================================*/
-#define FREC_MAX 10
-#define FREC_MIN 1
-#define PAUSE_FREC 5000
-/*==================[internal data declaration]==============================*/
+#define FREC_MAX 10			/*	Frecuencia maxima del parpadeo del LED	*/
+#define FREC_MIN 1			/*	Frecuencia minima del parpadeo del LED	*/
+#define PAUSE_FREC 5000		/*	Tiempo activo de cada frecuencia del parpadeo del LED	*/
 
 /*==================[internal functions declaration]=========================*/
 
@@ -66,7 +34,6 @@ static void pausems(uint32_t t);
 /** @brief used for delay counter */
 static uint32_t pausems_count;
 static uint32_t pausems_frec=0;
-/*==================[external data definition]===============================*/
 
 /*==================[internal functions definition]==========================*/
 
