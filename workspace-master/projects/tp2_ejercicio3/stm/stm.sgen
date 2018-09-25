@@ -1,0 +1,11 @@
+GeneratorModel for yakindu::c {
+
+	statechart stm {
+
+		feature Outlet {
+			targetProject = "workspace-master"
+			targetFolder = "/projects/tp2_ejercicio3/src"
+			libraryTargetFolder = "/projects/tp2_ejercicio3/src"
+		}
+	}
+}
